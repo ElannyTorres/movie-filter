@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# MOVIE FILTER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Esta es una aplicación de filtrado de películas que permite a los usuarios buscar y filtrar películas por nombre, descripción y género. La aplicación está construida con React y utiliza Axios para obtener los datos de un archivo JSON.
 
-In the project directory, you can run:
+## Características
 
-### `npm start`
+- Mostrar una lista de películas con **título**, **descripción** y **género**.
+- Filtrar películas por nombre, descripción y género.
+- Actualizar dinámicamente la lista de películas según los criterios de búsqueda.
+- Mostrar un mensaje de error si no se encuentran coincidencias.
+- Mostrar un mensaje de carga mientras los datos se están obteniendo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalación
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clona el repositorio:
+    ```sh
+    git clone https://github.com/ElannyTorres/movie-filter.git
+    cd movie-filter
+    ```
 
-### `npm test`
+2. Instala las dependencias:
+    ```sh
+    npm install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Inicia la aplicación:
+    ```sh
+    npm start
+    ```
 
-### `npm run build`
+## Uso
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Ingresa un nombre de película en el campo **"Name"** para filtrar por nombre.
+- Ingresa una descripción de película en el campo **"Description"** para filtrar por descripción.
+- Selecciona uno o más géneros para filtrar por **Genre**.
+- Presiona el botón **"REFRESH"** para restablecer los filtros y mostrar todas las películas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Vistas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Vista Inicial de la aplicación web
+![Vista inicial](public/img/vistaInicial.png)
 
-### `npm run eject`
+- Filtrado por el campo **Name**
+![Filtrado por Name](public/img/nameInput.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Filtrado por el campo **Description**
+![Filtrado por Description](public/img/descriptionInput.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Filtrado por el campo **Genre**
+![Filtrado por Genre](public/img/genreFilter.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Filtrado por dos o más campos de **Genre**
+![Filtrado por 2 o más Genre](public/img/genreFilterCombo.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Mensaje de **Error** al no haber coincidencias con la búsqueda
+![Sin resultados](public/img/noMatch.png)
 
-## Learn More
+## Estructura del Proyecto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/components/Card.js`: Componente para mostrar los detalles de una película.
+- `src/components/InputField.js`: Componente para los campos de entrada (nombre y descripción).
+- `src/components/GenreFilter.js`: Componente para filtrar por géneros.
+- `src/components/AlertMessage.js`: Componente para mostrar mensajes de alerta.
+- `src/App.js`: Componente principal de la aplicación.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tecnologías Utilizadas
 
-### Code Splitting
+- React
+- Axios
+- Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Principios SOLID y Buenas Prácticas de Desarrollo
 
-### Analyzing the Bundle Size
+### Principios SOLID
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Principio de Responsabilidad Única (SRP)**:
+   - Cada componente tiene una única responsabilidad. Por ejemplo, `Card` es responsable de mostrar los detalles de una película, mientras que `App` maneja el estado global y la lógica de filtrado.
 
-### Making a Progressive Web App
+2. **Principio de Abierto/Cerrado (OCP)**:
+   - El código está abierto para la extensión, pero cerrado para la modificación. Puedes extender la funcionalidad de los componentes sin necesidad de modificarlos directamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. **Principio de Sustitución de Liskov (LSP)**:
+   - Aunque no se aplica directamente debido a la falta de jerarquía de herencia, los componentes pueden ser sustituidos sin alterar la funcionalidad general.
 
-### Advanced Configuration
+4. **Principio de Segregación de Interfaces (ISP)**:
+   - Los componentes están bien segregados, como `InputField` para los campos de entrada y `GenreFilter` para los filtros de género, lo que permite una reutilización más fácil y modular.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. **Principio de Inversión de Dependencias (DIP)**:
+   - Se utiliza `useEffect` y `useState` para manejar dependencias y efectos, manteniendo los componentes desacoplados y centrados en su propia lógica.
 
-### Deployment
+### Buenas Prácticas de Desarrollo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Separación de la lógica de negocio de la presentación**:
+  - La lógica de filtrado se maneja en el componente `App`, mientras que la presentación se maneja en `Card` y otros componentes de UI.
 
-### `npm run build` fails to minify
+- **Uso de hooks para manejar el estado y efectos**:
+  - `useState` y `useEffect` se utilizan para manejar el estado y los efectos secundarios de manera eficiente y clara.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Manejo de errores y estado de carga**:
+  - `isLoading` controla la visualización del mensaje "Loading..." y asegura que los datos se cargan antes de intentar mostrarlos.
+
+- **Componentes reutilizables y modulares**:
+  - Los componentes como `InputField`, `GenreFilter` y `AlertMessage` son pequeños, específicos y reutilizables, siguiendo las mejores prácticas de desarrollo.
