@@ -11,7 +11,7 @@ function Card(props) {
   const { data } = props;
 
   return (
-    <div className="max-w-sm w-full h-120 rounded overflow-hidden shadow-lg flex flex-col justify-between">
+    <div className="max-w-sm w-full h-120 rounded overflow-hidden shadow-lg flex flex-col justify-between bg-slate-100">
       {data ? (
         <>
           <img className="w-full h-48 object-cover" src={data.img} alt={data.title} />
