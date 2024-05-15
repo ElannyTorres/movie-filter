@@ -1,0 +1,89 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "description": "Two impresioned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "genre": "Drama",
+      "img": "https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "genre": "Action",
+      "img": "https://m.media-amazon.com/images/I/81DLp4pu+JL._AC_UY436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "description": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+      "genre": "Action",
+      "img": "https://m.media-amazon.com/images/I/910lwRBoPLL._AC_UY436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "description": "The lives of two mon-hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "genre": "Crime",
+      "img": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "genre": "Crime",
+      "img": "https://m.media-amazon.com/images/I/714ZOEiVNtL._AC_UY436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Fight Club",
+      "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "genre": "Drama",
+      "img": "https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "The Matrix",
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "genre": "Action",
+      "img": "https://m.media-amazon.com/images/I/51EG732BV3L._AC_SY679_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Forrest Gump",
+      "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "genre": "Drama",
+      "img": "https://m.media-amazon.com/images/I/71nGjvTg15L._AC_UY436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Schindler's List",
+      "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "genre": "Drama",
+      "img": "https://m.media-amazon.com/images/I/719kmsTK6ZL._AC_UY436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "description": "In the first part, The Lord of the Rings, a shy young hobbit named Frodo Baggins inherits a simple gold ring that holds the secret to the survival--or enslavement--of the entire world.",
+      "genre": "Adventure",
+      "img": "https://m.media-amazon.com/images/I/91foYfbW4bL._AC_UY436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "The Lord of the Rings: The Two Towers",
+      "description": "In the second part of the Tolkien trilogy, Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths.",
+      "genre": "Adventure",
+      "img": "https://m.media-amazon.com/images/I/81W4uC8TQAL._AC_UY436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 12,
+      "title": "The Lord of the Rings: The Return of the King",
+      "description": "In the conclusion of J.R.R. Tolkien's epic masterpiece, as armies amass for a final battle, a member of the Fellowship of the Ring is revealed as heir to the throne of the Kings of Men. The sole hope for triumph over evil lies with a brave hobbit, Frodo. Accompanied by his loyal friend Sam and the wretched Gollum, he ventures into the dark heart of Mordor on his quest to destroy the Ring of Power.",
+      "genre": "Adventure",
+      "img": "https://m.media-amazon.com/images/I/91LAfx+AZhL._AC_UY436_FMwebp_QL65_.jpg"
+    }
+  ],
+  "genres": ["Drama", "Action", "Crime", "Adventure"]
+}
